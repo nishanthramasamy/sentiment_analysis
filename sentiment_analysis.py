@@ -8,17 +8,17 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 import pandas as pd
 import streamlit as st
 
-ylp = pd.read_csv(rf"F:\guvi_test\sentiment_Analysis\yelp_labelled.txt", sep='\t', names=['reviews', 'label'] )
+ylp = pd.read_csv(rf"yelp_labelled.txt", sep='\t', names=['reviews', 'label'] )
 print(ylp.head())
 print(ylp.isnull().sum())
 print(ylp.shape)
 
-amz = pd.read_csv(rf"F:\guvi_test\sentiment_Analysis\amazon_cells_labelled.txt", sep='\t', names=['reviews', 'label'])
+amz = pd.read_csv(rf"amazon_cells_labelled.txt", sep='\t', names=['reviews', 'label'])
 print(amz.isnull().sum())
 print(amz.head())
 print(amz.shape)
 
-imdb = pd.read_csv(rf"F:\guvi_test\sentiment_Analysis\imdb_labelled.txt", sep='\t', names=['reviews', 'label'])
+imdb = pd.read_csv(rf"imdb_labelled.txt", sep='\t', names=['reviews', 'label'])
 print(imdb.isnull().sum())
 print(imdb.head())
 print(imdb.shape)
