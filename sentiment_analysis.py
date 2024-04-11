@@ -62,8 +62,8 @@ print("\n\n")
 print(confusion_matrix(y_test,y_pred))
 
 st.title("Welcome!!!")
-st.write("Check whether your statement is positive/negative")
-input = st.text_input("Enter your mood")
+st.write("Let's see if you are in a positive/negative state")
+input = st.text_input("Enter your thoughts")
 senti = pipe.predict([input])
 
 button = st.button("Check Mood")
@@ -71,4 +71,4 @@ if button:
     if senti == 1:
         st.write("Yay! You are happy and positive")
     if senti == 0:
-        st.write("Sorry! It is sad to see you sad")
+        st.write("Sorry! It is sad to see you sad. Just give a Smile. Sadness gets into madness")
